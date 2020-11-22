@@ -1,0 +1,99 @@
+@media (max-width: 395px){
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  
+}
+
+.logo{
+  text-align: center;
+  margin: 25px 220px 30px 0;
+  padding: 10px 0;
+  font-size: 20px;
+  border: 2px solid #fff;
+  border-radius: 0px 55px 10px 35px;
+  color: #fff;
+}
+
+/* .sidepanel{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  background-color: rgba(0,0,0, 0.9);
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidepanel a{
+  padding: 10px 0px 15px 0px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 900;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+} */
+
+.App{
+  /* overflow-x: hidden; */
+  margin: 0% 5%;
+}
+
+.search-form{
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  /* width: 100%; */
+  margin: 30px 0px;
+  padding: 20px 0px;
+  /* border: 1px solid #fff; */
+  justify-content: center;
+  /* background: linear-gradient(to right, #00f260, #0575e6); */
+  /* background-color: #fff; */
+  z-index: 1;
+}
+
+.search-bar{
+  width: 65%;
+  padding: 10px;
+  border: none;
+  border-radius: 50px 0px 0px 50px;
+  outline: none;
+  font-size: 16px;
+  font-weight: 900;
+  box-shadow: 1px 1px 50px 0px #313131de;
+}
+
+.search-button{
+  background: none;
+  border: none;
+  outline: none;
+  width: auto;
+  padding: 0 20px;
+  border-radius: 0px 50px 50px 0px;
+  background: linear-gradient(to right, #00f260, #0575e6);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 900;
+  color: #fff;
+  box-shadow: 1px 1px 50px 0px #313131de;
+}
+
+
+
+
+
+
+
+
+
+
+}
