@@ -9,32 +9,26 @@ const App = () => {
   const APP_KEY = "4df3b4a744cab600ecf6eec0ccbdb5b5";
 
   const [recipes , setRecipes] = useState([]);
-  const [search , setSearch] = useState("");
   const [query , setQuery] = useState("");
 
-  // ONload fetch using useEffect
-  // useEffect( () => {
-    // Changed to Fetch on Search...
-    const getRecipes = async () => {
-      const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`);
-      const data = await response.json();
-      setRecipes(data.hits);
-      console.log(data.hits);
-    };
-    // getRecipes()
-  // }, [query]);
+  // Fetch data from API
+  const getRecipes = async () => {
+    const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`);
+    const data = await response.json();
+    setRecipes(data.hits);
+    // console.log(data.hits);
+    setQuery("");
+  };
 
   // Update Search Value
-  const updateSearch = evt => {
-    setSearch(evt.target.value);
+  const onChange = evt => {
+    setQuery(evt.target.value);
   }
 
-  // Search Recipe and sending value to setQuery
-  const getSearch = evt => {
-    evt.preventDefault();
-    setQuery(search);
-    setSearch('');
-    getRecipes()
+  // Get Search 
+  const onSubmit = e => {
+    e.preventDefault();
+    getRecipes();
   }
 
   // Display Form
@@ -42,9 +36,9 @@ const App = () => {
     <div className="App">
     <div className="logo">Cookeez</div>
 
-      <form onSubmit={getSearch} action="" className="search-form">
-        <input type="text" className="search-bar" value={search} onChange={updateSearch} placeholder="Search Recipe..."/>
-        <button className="search-button" type='submit'>Search</button>
+      <form onSubmit={onSubmit} action="" className="search-form">
+        <input type="text" className="search-bar" onChange={onChange} value={query} placeholder="Search Recipe..."/>
+        <input className="search-button" type='submit' value="search"/>
       </form>
 
       {/* Extract data from API */}
