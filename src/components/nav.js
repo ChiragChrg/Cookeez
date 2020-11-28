@@ -15,7 +15,7 @@ const Nav = () => {
 
         <div className={style.ham}>
             <div className={style.nav}>
-                <div id="mySidepanel" className={style.sidebar} >
+                <div id="mySidepanel" className={style.sidebar}>
                     <i className="fas fa-times" id={style.closebtn} onClick={closeNav}></i>
                     <ul>
                         <li>
