@@ -16,7 +16,7 @@ const Nav = () => {
         <div className={style.ham}>
             <div className={style.nav}>
                 <div id="mySidepanel" className={style.sidebar} >
-                    <i href="javascript:void(0)" className="fas fa-times" id={style.closebtn} onClick={closeNav}></i>
+                    <i className="fas fa-times" id={style.closebtn} onClick={closeNav}></i>
                     <ul>
                         <li>
                             <a className={style.active} href="index.html">Home</a>
