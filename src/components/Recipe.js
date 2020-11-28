@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import RecipeIngred from './RecipeIngred';
-import style from './Recipe.module.css';
+import style from './css/Recipe.module.css';
 
 // Get API data from App.js
 const Recipe = ({title,image,diet,calories,ingredients,url,serve}) => {

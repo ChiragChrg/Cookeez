@@ -46,7 +46,7 @@
   margin: 0% 5%;
 }
 
-.search-form{
+.searchform{
   display: flex;
   position: -webkit-sticky;
   position: sticky;
@@ -61,7 +61,7 @@
   z-index: 1;
 }
 
-.search-bar{
+.searchbar{
   width: 65%;
   padding: 10px;
   border: none;
@@ -72,7 +72,7 @@
   box-shadow: 1px 1px 50px 0px #313131de;
 }
 
-.search-button{
+.searchbutton{
   background: none;
   border: none;
   outline: none;
@@ -87,6 +87,14 @@
   box-shadow: 1px 1px 50px 0px #313131de;
 }
 
+.vector{
+  z-index: -2;
+}
+
+.vector img{
+  width: 100%;
+  margin: 50px 0;
+}
 
 
 

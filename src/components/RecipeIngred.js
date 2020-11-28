@@ -1,6 +1,6 @@
 import React from 'react';
 import {v4 as uuidv4} from 'uuid';
-import style from './Recipe.module.css';
+import style from './css/Recipe.module.css';
 
 
 // Get Recipe Ingredients from Recipe.js

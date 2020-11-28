@@ -1,7 +1,9 @@
 import React, {useState} from 'react';
 import { v4 as uuidv4 } from 'uuid';
-import Recipe from './Recipe';
-import './App.css';
+import Recipe from './components/Recipe';
+import Nav from './components/nav';
+import style from './components/css/App.module.css';
+import vectorlogo from './assets/vector.svg';
 
 // Main
 const App = () => {
@@ -25,21 +27,32 @@ const App = () => {
     setQuery(evt.target.value);
   }
 
+  const setVector = () => {
+    document.getElementById("vector").style.visibility = 'hidden';
+    document.getElementById("vector").style.width = '0';
+  }
+
   // Get Search 
   const onSubmit = e => {
     e.preventDefault();
     getRecipes();
+    setVector();
   }
 
   // Display Form
   return(
-    <div className="App">
-    <div className="logo">Cookeez</div>
+    <div className={style.App}>
+      <div className={style.logo}>Cookeez</div>
+      <Nav/>
 
-      <form onSubmit={onSubmit} action="" className="search-form">
-        <input type="text" className="search-bar" onChange={onChange} value={query} placeholder="Search Recipe..."/>
-        <input className="search-button" type='submit' value="search"/>
+      <form onSubmit={onSubmit} action="" className={style.searchform}>
+        <input type="text" className={style.searchbar} onChange={onChange} value={query} placeholder="Search Recipe..."/>
+        <input className={style.searchbutton} type='submit' value="search"/>
       </form>
+
+      <div className={style.vector} id="vector">
+        <img src={vectorlogo} alt="vector"/>
+      </div>
 
       {/* Extract data from API */}
       {recipes.map(recipe => (

@@ -1,0 +1,60 @@
+.sidebar{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    background-color: rgb(10, 118, 219);
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidebar li{
+    margin: 50px 0 0 0;
+}
+
+.sidebar a{
+    padding: 10px 0px 15px 0px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 900;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a.active{
+    color: #fff;
+    background-color: rgba(105, 13, 226, 0.9);
+}
+
+.navmain{
+    /* border: 1px solid #000; */
+    position: absolute;
+    left: 84%;
+    top: 3%;
+}
+
+#closebtn {
+    position: absolute;
+    top: 3%;
+    right: 26px;
+    font-size: 50px;
+    margin-left: 50px;
+    color: #fff;
+}
+
+#openbtn{
+    border-style: none;
+    background: none;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 900;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    text-shadow: 0.5px 0.5px 5px #000000;
+}
