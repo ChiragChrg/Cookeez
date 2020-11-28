@@ -32,7 +32,7 @@ const App = () => {
     document.getElementById("vector").style.width = '0';
   }
 
-  // Get Search 
+  //  Get Search 
   const onSubmit = e => {
     e.preventDefault();
     getRecipes();
