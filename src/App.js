@@ -68,6 +68,10 @@ const App = () => {
         />
       ))}
 
+      <footer>
+        <p> &#169; Copyright 2020 ChiragChrg </p>
+      </footer>
+
     </div>
   );
 };
