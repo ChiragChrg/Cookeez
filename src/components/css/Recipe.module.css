@@ -1,3 +1,5 @@
+/* ================================== Mobile Design ================================== */
+
 @media (max-width: 395px){
 .container{
     margin: 20px 0;
@@ -126,6 +128,10 @@
 
 }
 
+
+
+/* ================================== Desktop Design ================================== */
+
 @media (min-width : 396px){
 
 .container{
@@ -240,21 +246,29 @@
     font-weight: 900;
 }
 
-.ingred{
+/* .ingred{
     display: flex;
     flex-wrap: wrap;
     width: auto;
+} */
+
+.ingredlist{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
 }
 
 .ingredul{
     /* list-style-type: none; */
-    padding: 8px 10px 8px 20px;
+    padding-left: 25px;
+    line-break: loose;
 
 }
 
 .ingredli{
     font-size: 17px;
     font-weight: 900;
+    
 }
 
 }

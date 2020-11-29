@@ -7,12 +7,14 @@ import style from './css/Recipe.module.css';
 const recipeIngred = ({ingredients}) => {
     return ingredients.map(ingredient => {
 
-        // Display Ingredients i Order
+        // Display Ingredients ib Order
         return(
-            <ul className={style.ingredul} key={uuidv4()}>
+            <div className={style.ingredlist}>
+                <ul className={style.ingredul} key={uuidv4()}>
                     <li className={style.ingredli}>{ingredient.text}</li>
                     {/* <li>Weight-{ingredient.weight}</li> */}
             </ul>
+            </div>
         )
     });
 }
