@@ -20,7 +20,7 @@ const Nav = () => {
                     <ul>
                         <li>
                             <a className={style.active} href="index.html">Home</a>
-                            <a href="#">About</a>
+                            <a href="about.html">About</a>
                         </li>
                     </ul>
                 </div>

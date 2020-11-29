@@ -64,17 +64,15 @@ const App = () => {
       <div className={style.logo}>Cookeez</div>
       <Nav/>
 
-      // Search Bar
       <form onSubmit={onSubmit} action="" className={style.searchform}>
         <input type="text" className={style.searchbar} onChange={onChange} value={query} placeholder="Search Recipe..."/>
         <input className={style.searchbutton} type='submit' value="Search"/>
       </form>
 
-      // Error Message
-      {alert !== "" && <Alert alert={alert}/>}
+        {alert !== "" && <Alert alert={alert}/>}
 
-      // Extract data from API 
       <div className={style.recipe}>
+          {/* Extract data from API */}
         {recipes.map(recipe => (
           <Recipe 
             key={uuidv4()}
@@ -88,13 +86,11 @@ const App = () => {
           />
         ))}
       </div>
-      
-      // Vector image
+
       <div className={style.vector} id="vector">
         <img src={vectorlogo} alt="vector"/>
       </div>
-      
-      // Copyright
+
       <footer>
         <p> &#169; Copyright 2020 ChiragChrg </p>
       </footer>
