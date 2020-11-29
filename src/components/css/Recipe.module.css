@@ -124,9 +124,137 @@
     font-weight: 900;
 }
 
+}
+
+@media (min-width : 396px){
+
+.container{
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 30%;
+    justify-content: space-evenly;
+    margin: 20px 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 2px 3px 10px 0px #313131de;
+}
+
+.title{
+    color: #000;
+    text-align: center;
+}
+
+.img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.rinfo{
+    display: flex;
+    justify-content: space-evenly;
+    height: auto;
+    contain: content;
+    padding: 10px 0;
+}
 
 
+.diet{
+    width: auto;
+    height: auto;
+    margin: 3px;
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 900;
+    text-shadow: 1px 1px 5px #313131de;
+    background: linear-gradient(to right, #00fe15, #dff800);
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 0px #313131de;
+}
+
+.serve{
+    min-width: 80px;
+    height: auto;
+    margin: 3px;
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 900;
+    text-shadow: 1px 1px 5px #313131de;
+    background: linear-gradient(to right, #00f6fe, #4a00f8);
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 0px #313131de;
+}
+
+.cal{
+    width: auto;
+    height: auto;
+    margin: 3px;
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 900;
+    text-shadow: 1px 1px 5px #313131de;
+    background: linear-gradient(to right, #fe8c00, #f83600);
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 0px #313131de;
+}
 
 
+.container #post{
+    width: auto;
+    height: auto;
+    background: linear-gradient(to right, #fe8c00, #f83600);
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 0px #313131de;
+    display: block;
+    text-align: center;
+    padding: 15px 10px;
+    margin: 0 25%;
+    text-decoration: none;
+    color: #fff;
+    font-size: 19px;
+}
+
+.ibtn{
+    display: flex;
+    margin: 10px auto;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to right, #fe8c00, #f83600);
+    padding: 15px 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 0px #313131de;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.ingred{
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+}
+
+.ingredul{
+    /* list-style-type: none; */
+    padding: 8px 10px 8px 20px;
+
+}
+
+.ingredli{
+    font-size: 17px;
+    font-weight: 900;
+}
 
 }

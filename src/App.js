@@ -15,11 +15,23 @@ const App = () => {
 
   // Fetch data from API
   const getRecipes = async () => {
-    const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`);
-    const data = await response.json();
-    setRecipes(data.hits);
-    // console.log(data.hits);
-    setQuery("");
+      const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`);
+      
+      const data = await response.json();
+      setRecipes(data.hits);
+      console.log(response);
+      // console.log(data);
+      setQuery("");
+
+      // if (data.count === 0) {
+      //   console.log(data.count ,"Not 200 response");
+      //   return(
+      //   <div className={style.error}>
+      //     <h1>LOL ERROR</h1>
+      //   <Err/>
+      //   </div>
+      //   )
+      // }
   };
 
   // Update Search Value
@@ -47,26 +59,28 @@ const App = () => {
 
       <form onSubmit={onSubmit} action="" className={style.searchform}>
         <input type="text" className={style.searchbar} onChange={onChange} value={query} placeholder="Search Recipe..."/>
-        <input className={style.searchbutton} type='submit' value="search"/>
+        <input className={style.searchbutton} type='submit' value="Search"/>
       </form>
+
+      <div className={style.recipe}>
+          {/* Extract data from API */}
+        {recipes.map(recipe => (
+          <Recipe 
+            key={uuidv4()}
+            title={recipe.recipe.label}
+            image={recipe.recipe.image}
+            diet={recipe.recipe.dietLabels}
+            calories={recipe.recipe.calories}
+            serve={recipe.recipe.yield}
+            url={recipe.recipe.url}
+            ingredients={recipe.recipe.ingredients}
+          />
+        ))}
+      </div>
 
       <div className={style.vector} id="vector">
         <img src={vectorlogo} alt="vector"/>
       </div>
-
-      {/* Extract data from API */}
-      {recipes.map(recipe => (
-        <Recipe 
-          key={uuidv4()}
-          title={recipe.recipe.label}
-          image={recipe.recipe.image}
-          diet={recipe.recipe.dietLabels}
-          calories={recipe.recipe.calories}
-          serve={recipe.recipe.yield}
-          url={recipe.recipe.url}
-          ingredients={recipe.recipe.ingredients}
-        />
-      ))}
 
       <footer>
         <p> &#169; Copyright 2020 ChiragChrg </p>
