@@ -10,6 +10,7 @@
 @media (max-width: 395px) {
   .App {
     margin: 0% 5%;
+    height: 100%;
   }
 
   .logo {
@@ -72,19 +73,18 @@
   }
 
   footer {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10%;
+    position: static;
+    top: 40%;
+    bottom: 10%;
   }
 
   footer p {
-    position: fixed;
-    top: 90%;
-    color: #fff;
     font-size: 18px;
-    font-weight: normal;
+    font-weight: 900;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
     letter-spacing: 1px;
-    text-shadow: 2px 2px 5px #313131de;
     z-index: -1;
   }
 }
