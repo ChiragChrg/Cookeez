@@ -1,38 +1,37 @@
 /* ================================== Mobile Design ================================== */
 
-@media (max-width: 395px){
-.container{
+@media (max-width: 395px) {
+  .container {
     margin: 20px 0;
     background-color: #fff;
     border-radius: 10px;
     padding: 15px;
     box-shadow: 2px 3px 10px 0px #313131de;
-}
+  }
 
-.title{
+  .title {
     color: #000;
     text-align: center;
-}
+  }
 
-.img{
+  .img {
     margin-top: 10px;
     margin-bottom: 10px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
-}
+  }
 
-.rinfo{
+  .rinfo {
     display: flex;
     justify-content: space-evenly;
     height: auto;
     contain: content;
     padding: 10px 0;
-}
+  }
 
-
-.diet{
+  .diet {
     width: auto;
     height: auto;
     margin: 3px;
@@ -42,12 +41,12 @@
     font-size: 18px;
     font-weight: 900;
     text-shadow: 1px 1px 5px #313131de;
-    background: linear-gradient(to right, #00fe15, #dff800);
+    background: #15fb00;
     border-radius: 5px;
     box-shadow: 1px 1px 5px 0px #313131de;
-}
+  }
 
-.serve{
+  .serve {
     min-width: 80px;
     height: auto;
     margin: 3px;
@@ -57,12 +56,12 @@
     font-size: 18px;
     font-weight: 900;
     text-shadow: 1px 1px 5px #313131de;
-    background: linear-gradient(to right, #00f6fe, #4a00f8);
+    background: #ff0080;
     border-radius: 5px;
     box-shadow: 1px 1px 5px 0px #313131de;
-}
+  }
 
-.cal{
+  .cal {
     width: auto;
     height: auto;
     margin: 3px;
@@ -72,16 +71,15 @@
     font-size: 18px;
     font-weight: 900;
     text-shadow: 1px 1px 5px #313131de;
-    background: linear-gradient(to right, #fe8c00, #f83600);
+    background: #ff0000;
     border-radius: 5px;
     box-shadow: 1px 1px 5px 0px #313131de;
-}
+  }
 
-
-.container #post{
+  .container #post {
     width: auto;
     height: auto;
-    background: linear-gradient(to right, #fe8c00, #f83600);
+    background: #00b4ff;
     border-radius: 5px;
     box-shadow: 1px 1px 5px 0px #313131de;
     display: block;
@@ -91,14 +89,14 @@
     text-decoration: none;
     color: #fff;
     font-size: 19px;
-}
+  }
 
-.ibtn{
+  .ibtn {
     display: flex;
     margin: 10px auto;
     width: 100%;
     height: auto;
-    background: linear-gradient(to right, #fe8c00, #f83600);
+    background: #ffa500;
     padding: 15px 10px;
     border: none;
     border-radius: 5px;
@@ -107,34 +105,29 @@
     color: #fff;
     font-size: 20px;
     font-weight: 900;
-}
+  }
 
-.ingred{
+  .ingred {
     display: flex;
     flex-wrap: wrap;
     width: auto;
-}
+  }
 
-.ingredul{
+  .ingredul {
     /* list-style-type: none; */
     padding: 8px 10px 8px 20px;
+  }
 
-}
-
-.ingredli{
+  .ingredli {
     font-size: 17px;
     font-weight: 900;
+  }
 }
-
-}
-
-
 
 /* ================================== Desktop Design ================================== */
 
-@media (min-width : 396px){
-
-.container{
+@media (min-width: 396px) {
+  .container {
     display: inline-flex;
     flex-wrap: wrap;
     width: 30%;
@@ -144,32 +137,31 @@
     border-radius: 10px;
     padding: 15px;
     box-shadow: 2px 3px 10px 0px #313131de;
-}
+  }
 
-.title{
+  .title {
     color: #000;
     text-align: center;
-}
+  }
 
-.img{
+  .img {
     margin-top: 10px;
     margin-bottom: 10px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
-}
+  }
 
-.rinfo{
+  .rinfo {
     display: flex;
     justify-content: space-evenly;
     height: auto;
     contain: content;
     padding: 10px 0;
-}
+  }
 
-
-.diet{
+  .diet {
     width: auto;
     height: auto;
     margin: 3px;
@@ -179,12 +171,12 @@
     font-size: 18px;
     font-weight: 900;
     text-shadow: 1px 1px 5px #313131de;
-    background: linear-gradient(to right, #00fe15, #dff800);
+    background: #15fb00;
     border-radius: 5px;
     box-shadow: 1px 1px 5px 0px #313131de;
-}
+  }
 
-.serve{
+  .serve {
     min-width: 80px;
     height: auto;
     margin: 3px;
@@ -194,12 +186,12 @@
     font-size: 18px;
     font-weight: 900;
     text-shadow: 1px 1px 5px #313131de;
-    background: linear-gradient(to right, #00f6fe, #4a00f8);
+    background: #ff0080;
     border-radius: 5px;
     box-shadow: 1px 1px 5px 0px #313131de;
-}
+  }
 
-.cal{
+  .cal {
     width: auto;
     height: auto;
     margin: 3px;
@@ -209,16 +201,15 @@
     font-size: 18px;
     font-weight: 900;
     text-shadow: 1px 1px 5px #313131de;
-    background: linear-gradient(to right, #fe8c00, #f83600);
+    background: #ff0000;
     border-radius: 5px;
     box-shadow: 1px 1px 5px 0px #313131de;
-}
+  }
 
-
-.container #post{
+  .container #post {
     width: auto;
     height: auto;
-    background: linear-gradient(to right, #fe8c00, #f83600);
+    background: #00b4ff;
     border-radius: 5px;
     box-shadow: 1px 1px 5px 0px #313131de;
     display: block;
@@ -228,14 +219,14 @@
     text-decoration: none;
     color: #fff;
     font-size: 19px;
-}
+  }
 
-.ibtn{
+  .ibtn {
     display: flex;
     margin: 10px auto;
     width: 100%;
     height: auto;
-    background: linear-gradient(to right, #fe8c00, #f83600);
+    background: #ffa500;
     padding: 15px 10px;
     border: none;
     border-radius: 5px;
@@ -244,31 +235,28 @@
     color: #fff;
     font-size: 20px;
     font-weight: 900;
-}
+  }
 
-/* .ingred{
+  /* .ingred{
     display: flex;
     flex-wrap: wrap;
     width: auto;
 } */
 
-.ingredlist{
+  .ingredlist {
     display: flex;
     flex-wrap: wrap;
     margin-top: 10px;
-}
+  }
 
-.ingredul{
+  .ingredul {
     /* list-style-type: none; */
     padding-left: 25px;
     line-break: loose;
+  }
 
-}
-
-.ingredli{
+  .ingredli {
     font-size: 17px;
     font-weight: 900;
-    
-}
-
+  }
 }
