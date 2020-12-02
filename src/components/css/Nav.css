@@ -1,7 +1,7 @@
 /* ================================== Mobile Design ================================== */
 
-@media (max-width : 395px){
-.sidebar{
+@media (max-width: 395px) {
+  .sidebar {
     height: 100%;
     width: 0;
     position: fixed;
@@ -12,13 +12,13 @@
     background-color: rgb(10, 118, 219);
     padding-top: 60px;
     transition: 0.5s;
-}
+  }
 
-.sidebar li{
+  .sidebar li {
     margin: 50px 0 0 0;
-}
+  }
 
-.sidebar a{
+  .sidebar a {
     padding: 10px 0px 15px 0px;
     text-align: center;
     text-decoration: none;
@@ -27,29 +27,29 @@
     color: #fff;
     display: block;
     transition: 0.3s;
-}
+  }
 
-.sidebar a.active{
+  .sidebar a.active {
     color: #fff;
     background-color: rgba(105, 13, 226, 0.9);
-}
+  }
 
-.navmain{
+  .navmain {
     position: absolute;
     left: 84%;
     top: 3%;
-}
+  }
 
-#closebtn {
+  #closebtn {
     position: absolute;
     top: 3%;
     right: 26px;
     font-size: 50px;
     margin-left: 50px;
     color: #fff;
-}
+  }
 
-#openbtn{
+  #openbtn {
     border-style: none;
     background: none;
     text-decoration: none;
@@ -59,34 +59,35 @@
     outline: none;
     color: #fff;
     text-shadow: 0.5px 0.5px 5px #000000;
+  }
 }
-
-}
-
 
 /* ================================== Desktop Design ================================== */
 
-@media (min-width : 396px) {
-
-#openbtn, #closebtn{
+@media (min-width: 396px) {
+  #openbtn,
+  #closebtn {
     visibility: hidden;
-}
+  }
 
-.nav ul{
+  /* .ham {
+    border: 1px solid black;
+  } */
+
+  .nav ul {
     list-style-type: none;
     float: right;
     margin: 30px 10px;
     /* border: 1px solid black; */
+  }
 
-}
-
-.nav ul li{
+  .nav ul li {
     display: flex;
     /* border: 1px solid black; */
     padding: 3px 10px;
-}
+  }
 
-.nav ul li a{
+  .nav ul li a {
     padding: 5px 25px;
     margin: 0 8px;
     justify-content: space-between;
@@ -98,19 +99,18 @@
     font-size: 17px;
     font-weight: 600;
     letter-spacing: 0.5px;
-}
+    transition: 0.2s ease-in-out;
+  }
 
-.nav ul li a:hover{
+  .nav ul li a:hover {
     border-radius: 0px 55px 10px 35px;
     background-color: #fff;
     color: #000;
-    transition: .2s ease-in-out;
-}
+  }
 
-.nav ul li a.active{
+  .nav ul li a.active {
     border-radius: 0px 55px 10px 35px;
     background-color: #fff;
     color: #000;
-}
-
+  }
 }

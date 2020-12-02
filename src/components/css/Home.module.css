@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+/* ================================== Mobile Design ================================== */
+
+@media (max-width: 395px) {
+  .App {
+    margin: 0% 5%;
+  }
+
+  .logo {
+    text-align: center;
+    margin: 25px 220px 30px 0;
+    padding: 10px 0;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px #000000;
+    box-shadow: 0px 0px 8px 0px #888888;
+    border: 3px solid #fff;
+    border-radius: 0px 55px 10px 35px;
+    color: #fff;
+    font-weight: 900;
+  }
+
+  .searchform {
+    display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    margin: 30px 0px;
+    padding: 20px 0px;
+    justify-content: center;
+    z-index: 1;
+  }
+
+  .searchbar {
+    width: 65%;
+    padding: 10px;
+    border: none;
+    border-radius: 50px 0px 0px 50px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 900;
+    box-shadow: 1px 1px 20px 0px #313131de;
+  }
+
+  .searchbutton {
+    background: none;
+    border: none;
+    outline: none;
+    width: auto;
+    padding: 0 20px;
+    border-radius: 0px 50px 50px 0px;
+    background: linear-gradient(to right, #00f260, #0575e6);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 900;
+    color: #fff;
+    box-shadow: 1px 1px 20px 0px #313131de;
+  }
+
+  .vector {
+    z-index: -2;
+  }
+
+  .vector img {
+    width: 100%;
+    margin: 50px 0;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+  }
+
+  footer p {
+    position: fixed;
+    top: 90%;
+    color: #fff;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 5px #313131de;
+    z-index: -1;
+  }
+}
+
+/* ================================== Desktop Design ================================== */
+
+@media (min-width: 396px) {
+  .App {
+    margin: 0 30px;
+    height: 100%;
+    z-index: -1;
+    /* background: linear-gradient(to right, #5433ff, #20bdff);
+    background-size: cover; */
+  }
+
+  .logo {
+    color: #fff;
+    font-weight: 900;
+    border: 3px solid #fff;
+    border-radius: 0px 55px 10px 35px;
+    text-shadow: 2px 2px 4px #000000;
+    box-shadow: 0px 0px 8px 0px #888888;
+    float: left;
+    margin: -50px 0;
+    padding: 10px 20px;
+  }
+
+  .searchform {
+    display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    margin: 30px 0px 30px 320px;
+    padding: 20px 0px;
+    justify-content: center;
+    z-index: 1;
+  }
+
+  .searchbar {
+    /* margin-left: 23%; */
+    width: 60%;
+    padding: 10px;
+    border: none;
+    border-radius: 50px 0px 0px 50px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 900;
+    box-shadow: 1px 1px 50px 0px #313131de;
+  }
+
+  .searchbutton {
+    /* margin-left: 10%; */
+    background: none;
+    border: none;
+    outline: none;
+    width: auto;
+    padding: 0 20px;
+    border-radius: 0px 50px 50px 0px;
+    background: linear-gradient(to right, #00f260, #0575e6);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 900;
+    color: #fff;
+    box-shadow: 1px 1px 50px 0px #313131de;
+  }
+
+  .vector {
+    z-index: -2;
+  }
+
+  .vector img {
+    width: 100%;
+    height: 45vh;
+    margin: 50px 0;
+  }
+
+  .recipe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+  }
+
+  footer p {
+    position: static;
+    top: 90%;
+    color: #fff;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 5px #313131de;
+    z-index: -1;
+  }
+}
