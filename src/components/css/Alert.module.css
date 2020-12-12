@@ -1,11 +1,11 @@
-.Alert{
-    margin-top: -20px;
-    background: rgba(255, 0, 0);
-    padding: 10px 0;
-    /* border: 1px solid black; */
-    display: flex;
-    justify-content: center;
-    color: #fff;
-    border-radius: 50px;
-    box-shadow: 1px 1px 20px 0px #313131de;
-  }
+.Alert {
+  margin-top: -20px;
+  background: rgba(255, 0, 0, 0.9);
+  padding: 10px 0;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  border-radius: 50px;
+  box-shadow: 1px 1px 20px 0px #313131de;
+}

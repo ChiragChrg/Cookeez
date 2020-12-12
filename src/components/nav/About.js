@@ -43,7 +43,7 @@ const About = () => {
       </div>
 
       <div className={style.social}>
-        <i
+        <a
           // id="insta"
           // className={style.insta}
           className="fab fa-instagram fa-2x"
@@ -51,23 +51,23 @@ const About = () => {
           target="_blank"
           rel="noreferrer"
           style={insta}
-        ></i>
-        <i
+        ></a>
+        <a
           id="f"
           className="fab fa-facebook fa-2x"
           href="https://www.facebook.com/ChiragChrg"
           target="_blank"
           rel="noreferrer"
           style={fb}
-        ></i>
-        <i
+        ></a>
+        <a
           id="t"
           className="fab fa-twitter fa-2x"
           href="https://twitter.com/ChiragChrg1"
           target="_blank"
           rel="noreferrer"
           style={tweet}
-        ></i>
+        ></a>
       </div>
 
       <footer>

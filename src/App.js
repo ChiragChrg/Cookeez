@@ -15,18 +15,18 @@ function App() {
     }
   };
 
-  const [aone, setAone] = useState(false);
-  const [atwo, setAtwo] = useState(true);
+  const [aone, setAone] = useState(true);
+  const [atwo, setAtwo] = useState(false);
 
   const navAone = () => {
-    setAone(!aone);
-    setAtwo(!atwo);
+    setAone(true);
+    setAtwo(false);
     closeNav();
   };
 
   const navAtwo = () => {
-    setAtwo(!atwo);
-    setAone(!aone);
+    setAtwo(true);
+    setAone(false);
     closeNav();
   };
 
@@ -41,14 +41,14 @@ function App() {
               <li>
                 <Link
                   onClick={navAone}
-                  className={`inactive ${aone ? "" : "active"}`}
+                  className={`${aone ? "active" : "inactive"}`}
                   to="/"
                 >
                   Home
                 </Link>
                 <Link
                   onClick={navAtwo}
-                  className={`inactive ${atwo ? "" : "active"}`}
+                  className={`${atwo ? "active" : "inactive"}`}
                   to="/about"
                 >
                   About
