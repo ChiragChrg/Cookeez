@@ -24,10 +24,11 @@ const About = () => {
       <div className={style.para}>
         <p>
           {`
-          Hello, 
-          I'm Chirag, a prospective developer. 
-          I try to create anything which I find interesting. 
-          You can find all the source code for this project in the given link.`}
+            Hello,
+            I'm Chirag, a prospective developer.
+            I try to create exciting Webapps.
+            All of my projects are Open-Source, So Enjoy!
+          `}
         </p>
       </div>
 
@@ -43,7 +44,7 @@ const About = () => {
       </div>
 
       <div className={style.social}>
-        <a
+        <o
           // id="insta"
           // className={style.insta}
           className="fab fa-instagram fa-2x"
@@ -51,23 +52,23 @@ const About = () => {
           target="_blank"
           rel="noreferrer"
           style={insta}
-        ></a>
-        <a
+        ></o>
+        <o
           id="f"
           className="fab fa-facebook fa-2x"
           href="https://www.facebook.com/ChiragChrg"
           target="_blank"
           rel="noreferrer"
           style={fb}
-        ></a>
-        <a
+        ></o>
+        <o
           id="t"
           className="fab fa-twitter fa-2x"
           href="https://twitter.com/ChiragChrg1"
           target="_blank"
           rel="noreferrer"
           style={tweet}
-        ></a>
+        ></o>
       </div>
 
       <footer>

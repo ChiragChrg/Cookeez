@@ -168,7 +168,7 @@
     margin-right: 30%;
   }
 
-  .social a {
+  .social o {
     text-decoration: none;
     background-color: #fff;
     border-radius: 50px;
@@ -191,7 +191,7 @@
     color: #00acee;
   }
 
-  .social a:hover {
+  .social o:hover {
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.6);
     transform: rotate(360deg);
   }
