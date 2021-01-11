@@ -24,10 +24,11 @@ const About = () => {
       <div className={style.para}>
         <p>
           {`
-          Hello, 
-          I'm Chirag, a prospective developer. 
-          I try to create anything which I find interesting. 
-          You can find all the source code for this project in the given link.`}
+            Hello,
+            I'm Chirag, a prospective developer.
+            I try to create exciting Webapps.
+            All of my projects are Open-Source, So Enjoy!
+          `}
         </p>
       </div>
 
