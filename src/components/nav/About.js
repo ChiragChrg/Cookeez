@@ -44,7 +44,7 @@ const About = () => {
       </div>
 
       <div className={style.social}>
-        <o
+        <a
           // id="insta"
           // className={style.insta}
           className="fab fa-instagram fa-2x"
@@ -52,7 +52,7 @@ const About = () => {
           target="_blank"
           rel="noreferrer"
           style={insta}
-        ></o>
+        ></a>
         <o
           id="f"
           className="fab fa-facebook fa-2x"
