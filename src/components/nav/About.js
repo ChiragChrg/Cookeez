@@ -53,22 +53,22 @@ const About = () => {
           rel="noreferrer"
           style={insta}
         ></a>
-        <o
+        <a
           id="f"
           className="fab fa-facebook fa-2x"
           href="https://www.facebook.com/ChiragChrg"
           target="_blank"
           rel="noreferrer"
           style={fb}
-        ></o>
-        <o
+        ></a>
+        <a
           id="t"
           className="fab fa-twitter fa-2x"
           href="https://twitter.com/ChiragChrg1"
           target="_blank"
           rel="noreferrer"
           style={tweet}
-        ></o>
+        ></a>
       </div>
 
       <footer>
