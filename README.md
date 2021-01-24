@@ -1,6 +1,7 @@
 # Cookeez
 [![Netlify Status](https://api.netlify.com/api/v1/badges/acbb9b56-b04e-4d29-b823-d3f46b68eac1/deploy-status)](https://app.netlify.com/sites/cookeez/deploys)
-
+  
+(20/09/2020 - 14/01/2021)  
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
